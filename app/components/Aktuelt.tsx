@@ -343,11 +343,11 @@ export function ProfileMenu({ currentTime, onTimeSeek }: { currentTime: number, 
   }
   
   return (
-    <div className="relative">
+    <div className="relative m-4">
       {/* Button to toggle menu */}
       <button 
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="py-3 px-5 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors"
+        className="py-2 px-6 bg-gray-900 text-white font-medium rounded-xl shadow-lg hover:bg-gray-800 transition-all"
       >
         Viste Profiler {isMenuOpen ? '×' : `(${sortedProfiles.length})`}
       </button>
